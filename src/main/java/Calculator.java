@@ -8,6 +8,9 @@ public class Calculator{
       return a*b;
   }
 
+  public double sub(double a, double b){
+      return a-b;
+ }
 
   public double div(double a, double b){
      if(b != 0){ 
@@ -16,3 +19,4 @@ public class Calculator{
      return -1;
   }
 }
+
