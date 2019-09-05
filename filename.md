@@ -93,7 +93,7 @@ relevant environment and site.
  
 ## •	The temporary solution until Kafka is updated to mirror kafka
 
-1)	Populate into the ingestUrl environment variable that is within the config map the value the system is currently working on api-public-url. So, we can make the system active on both sites by changing the value of the ingestUrl environment variable.
+1)	Populate into the ingestUrl environment variable that is within the config map the value the system is currently working on api-public-url. So, we can make the system active on both sites by changing the value of the environment variable ingestUrl.
 
 
 
