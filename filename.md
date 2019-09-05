@@ -1,19 +1,19 @@
-Active Active Epic
+**Active Active Epic**
 
-•	The task:
+**•	The task:**
 
 make sites east and west to be active for ingesting messages.
 
 
 
-•	The goal:
+**•	The goal:**
 
 Split the load between the two sites, and let the global host decide which site to send messages to.
 
 
 
 
-•	Micro services are affected:
+**•	Micro services are affected:**
 
 1)	Broker
 2)	Snapshots
@@ -23,9 +23,9 @@ Split the load between the two sites, and let the global host decide which site 
 
 
 
-•	Changes made to each micro service:
+**•	Changes made to each micro service:**
 
-Orchestration
+**Orchestration**
 
 1)	Have each project created come up with host:in.dataflow.iot.att.com.
 ![](Picture1.png)
@@ -44,13 +44,13 @@ Core
 
 
 
-Snapshots
+**Snapshots**
 
 1)	Adds a query parameter (revision) to the function that the broker sends and save it to the Cassandra DB.
 
 
 
-Charts
+**Charts**
 
 1)	Adding a new host to value files in chart museum by the 
 relevant environment and site.
@@ -61,12 +61,12 @@ relevant environment and site.
 
 
 
-Broker
+**Broker**
 
 1)	Send the revision to snapshots whenever the broker saves streams.
 Update and Tests
 
-•	Update process:
+**•	Update process:**
 1)	projectone-orchestration  -> master_081819_083334_3  charts-museum ->0.0.127.
 2)	projectone-snapshots  -> master_081819_072053_3 charts-museum -> 0.1.40.
 3)	broker -> master_081819_074718_4 charts-museum -> 0.0.352.
@@ -74,8 +74,8 @@ Update and Tests
 5)	Base-image -> master_dev_081819_133050_24.
 6)	Dataflow-common-config ->  0.0.20.
 
-•	Processes that was tested with ingest host
-using the manual editing of the charts:
+**•	Processes that was tested with ingest host
+using the manual editing of the charts:**
 1)	Change the spec project located in east and check that it is also updated in the west.
 
 2)	Send a message to the host: in-dataflow-load.att.io and check that the global host directs the messages to the relevant site.
@@ -90,14 +90,14 @@ using the manual editing of the charts:
 
 
  
-•	The temporary solution until Kafka is updated to mirror kafka
+**•	The temporary solution until Kafka is updated to mirror kafka**
 
 1)	Populate into the ingestUrl environment variable that is within the config map the value the system is currently working on api-public-url. So, we can make the system active on both sites by changing the value of the ingestUrl environment variable.
 
 
 
 
-•	Processes that need to be tested:
+**•	Processes that need to be tested:**
 
 1)	Check the Active Active with the new registry.
 
