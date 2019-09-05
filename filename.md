@@ -28,11 +28,15 @@ Split the load between the two sites, and let the global host decide which site 
 ### Orchestration
 
 1)	Have each project created come up with host:in.dataflow.iot.att.com.
+
+
 ![](Picture1.png)
  
 
 
 2)	Expose the host ingest URL to external data to allow node dataflow-out to retrieve and use it to ingest messages.
+
+
 ![](Picture2.png)
 
  
@@ -42,14 +46,14 @@ Core
 
 1)	Replace base URL with ingest URL revealed by orchestration and use it to publish URL to dataflow.
 
-
+======================================================================================
 
 ### Snapshots
 
 1)	Adds a query parameter (revision) to the function that the broker sends and save it to the Cassandra DB.
 
 
-
+======================================================================================
 ### Charts
 
 1)	Adding a new host to value files in chart museum by the 
@@ -60,10 +64,13 @@ relevant environment and site.
 3)	Add a new ingest URL host to configMap to allow orchestration MS to retrieve and use it.
 
 
+======================================================================================
 
 ### Broker
 
 1)	Send the revision to snapshots whenever the broker saves streams.
+
+======================================================================================
 
 # Update and Tests
 
