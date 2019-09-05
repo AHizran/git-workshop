@@ -109,4 +109,4 @@ relevant environment and site.
 
 1)	Check the Active Active with the new registry.
 
-2)	Replace the in-dataflow-load.att.io host with a public URL in environment variables and check that a system stops being active for both sites
+2)	Replace the in-dataflow-load.att.io host with a public URL in environment variables and check that a system stops being active for both sites.
