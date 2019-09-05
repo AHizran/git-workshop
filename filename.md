@@ -6,14 +6,14 @@ make sites east and west to be active for ingesting messages.
 
 
 
-## •	The goal:**
+## •	The goal:
 
 Split the load between the two sites, and let the global host decide which site to send messages to.
 
 
 
 
-## •	Micro services are affected:**
+## •	Micro services are affected:
 
 1)	Broker
 2)	Snapshots
@@ -23,7 +23,7 @@ Split the load between the two sites, and let the global host decide which site 
 
 
 
-## •	Changes made to each micro service:**
+## •	Changes made to each micro service:
 
 ### Orchestration
 
@@ -64,7 +64,8 @@ relevant environment and site.
 ### Broker
 
 1)	Send the revision to snapshots whenever the broker saves streams.
-Update and Tests
+
+# Update and Tests
 
 ## •	Update process:
 1)	projectone-orchestration  -> master_081819_083334_3  charts-museum ->0.0.127.
