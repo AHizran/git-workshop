@@ -89,7 +89,7 @@ relevant environment and site.
 
 6)	But in the West site kafka returns an Error Timeout Exception.
 
-![](Picture3.png)
+![](Picture.png)
  
 ## •	The temporary solution until Kafka is updated to mirror kafka
 
