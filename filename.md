@@ -82,8 +82,7 @@ relevant environment and site.
 5)	Base-image -> master_dev_081819_133050_24.
 6)	Dataflow-common-config ->  0.0.20.
 
-## •	Processes that was tested with ingest host
-## using the manual editing of the charts: 
+## •	Processes that was tested with ingest host, using the manual editing of the charts: 
 1)	Change the spec project located in east and check that it is also updated in the west.
 
 2)	Send a message to the host: in-dataflow-load.att.io and check that the global host directs the messages to the relevant site.
