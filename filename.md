@@ -28,14 +28,12 @@ Split the load between the two sites, and let the global host decide which site 
 Orchestration
 
 1)	Have each project created come up with host:in.dataflow.iot.att.com.
-
-
-
+![](Picture1.png)
  
 
 
 2)	Expose the host ingest URL to external data to allow node dataflow-out to retrieve and use it to ingest messages.
-
+![](Picture2.png)
 
  
 
