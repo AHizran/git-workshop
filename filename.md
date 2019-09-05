@@ -25,6 +25,7 @@ Split the load between the two sites, and let the global host decide which site 
 
 ## •	Changes made to each micro service:
 
+======================================================================================
 ### Orchestration
 
 1)	Have each project created come up with host:in.dataflow.iot.att.com.
